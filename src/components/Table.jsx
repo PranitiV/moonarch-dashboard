@@ -30,7 +30,10 @@ const Table = ({data}) => {
     
   return (
     <div>
-        {data && <CompactTable columns={COLUMNS} data={tableData} />}
+        {data && <>
+            <h3 className="chart-title">Tabular Data</h3>
+            <CompactTable columns={COLUMNS} data={tableData} />
+        </>}
     </div>
   )
 }

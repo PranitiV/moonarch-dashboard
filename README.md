@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 📊 Moonarch Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, modern financial dashboard built with **React**, featuring real-time income data, dynamic charts, and a clean UI layout.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 📌 UI/UX & Layout
+- **Responsive Layout**: Sidebar and charts adjust based on screen size.
+- **Fixed Header**: Remains at the top while navigating the dashboard.
+- **Collapsible Sidebar**: Toggleable sidebar with smooth animations.
+- **Consistent Theme**: Modern, professional styling using pure CSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Charts & Data Visualization
+- **Multiple Chart Types**: Supports Line, Bar, Area, and Composed charts.
+- **Dynamic Chart Selection**: Add new charts from a dropdown menu.
+- **Chart Grid Layout**: Responsive arrangement of visual data blocks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📈 Financial Data Integration
+- **Real-Time Data**: Fetches quarterly income statements for public companies (currently `AAPL`) using the **RapidAPI Finance API**.
+- **Data Table**: Tabular view of all financial data fetched.
 
-### `npm test`
+### 🧩 Component Structure
+- `Header`: App title with toggle, refresh, and profile actions.
+- `Sidebar`: Navigation links with icons.
+- `Charts`: Central dashboard for visualizations and data.
+- `ChartCard`: Modular chart renderer.
+- `Table`: Financial data in a scrollable table layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📤 Export Features
+- **CSV Export**: Download all income statement data as a `.csv` file with a single click.
 
-### `npm run build`
+### 📤 ADDITIONAL FEATURE
+- **Search Bar and Dynamic rendering**:search for a ticker and see income data related to that company
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend**: React (Hooks-based)
+- **Styling**: CSS Modules (single file for consistency)
+- **Charts**: Recharts (responsive charting library)
+- **Data Source**: RapidAPI (Finance Data)
+- **Icons**: Lucide React
+- **Utilities**: `react-csv` for exporting tabular data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Install dependencies**
+   ```bash
+   npm install
+1. **Start server**
+   ```bash
+   npm start
+1. **Run locally**
+   ```bash
+   http://localhost:3000
